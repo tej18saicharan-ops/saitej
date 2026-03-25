@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Netflix Clone</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: url("https://assets.nflxext.com/ffe/siteui/vlv3/9b3b6a5c-bg.jpg")
+          no-repeat center center/cover;
+        height: 100vh;
+        color: white;
+      }
+
+      /* Dark overlay */
+      body::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      /* Navbar */
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+      }
+
+      .logo {
+        color: red;
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .signin {
+        background: red;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+
+      /* Main content */
+      .main {
+        text-align: center;
+        margin-top: 150px;
+      }
+
+      .main h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .main h3 {
+        margin: 20px 0;
+      }
+
+      .main p {
+        margin-bottom: 20px;
+      }
+
+      /* Form */
+      .form {
+        display: flex;
+        justify-content: center;
+      }
+
+      .form input {
+        padding: 15px;
+        width: 280px;
+        border: none;
+        outline: none;
+      }
+
+      .form button {
+        padding: 15px 20px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">NETFLIX</div>
+      <button class="signin">Sign In</button>
+    </header>
+
+    <div class="main">
+      <h1>Unlimited movies,<br />shows, and more</h1>
+      <h3>Starts at ₹149. Cancel anytime.</h3>
+      <p>
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+
+      <div class="form">
+        <input type="email" placeholder="Email address" />
+        <button>Get Started ></button>
+      </div>
+    </div>
+  </body>
+</html>
